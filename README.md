@@ -78,3 +78,28 @@ Car -- CarType
 @enduml
 ```
 [![IMAGE ALT TEXT](http://www.plantuml.com/plantuml/img/NP31YW8n38RlUOg0HvbtK4OM5dIHmSkUXcApMhRJIfevB8FlRjDMLZoqV7-R_6d_JHB3CayUG9numjwRb2XXLma72j8R1ay_WXAHtUKgQ1tJMLmCS2vL_PmaJiGB86AdQdHMURKtIOAPg5nyE7vHMskPKYfyZFaXVkoZ9RWtKnrT3PN6pzs_UUE1BkDNB7DAoSu8DIKpXwgVTlaNotlN8S_ppMqrl5MV_cvKErxBrWV3lnNqjD0tvOJky4m1kwuy7dHJeG7crL1zOKF1vjWV)
+
+
+* รูปที่ 4 Speed Enforcer
+```
+@startuml
+
+title Classes - Class Speed Enforcer
+left to right direction
+class SpeedEnforcer{
+   +CourtLocation
+   +date
+   +calculateSpeed()
+}
+class Car{
+   +modelType
+   +Doors
+   +autoMaker
+   -Radio()
+   +windshieldWiper()
+   +changeDirection()
+}
+SpeedEnforcer --> Car
+@enduml
+```
+[![IMAGE ALT TEXT](http://www.plantuml.com/plantuml/img/LL112i8m4Bpd5NjKf5-GGkjDBofuNf9j6upPacmG4VzkchQ8jvdTcPrXwoWO93sSKcB54JGEOwG8rOpWCX8PEFYEWwQW77K2mX1iFmWO6qYBPQ_qJxngtme0TWsd84VMM6JJnA1G0HgTJYwpOjjirMSvq-1YVh0XTtsDixvb3h4WJC8dlES-cLLdD9QpVTeyhJTniEJCpOuKbgaUqFVKhcrBr5zNgAhz5AjgyYP_umi0)
