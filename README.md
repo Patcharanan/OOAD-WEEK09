@@ -103,3 +103,55 @@ SpeedEnforcer --> Car
 @enduml
 ```
 [![IMAGE ALT TEXT](http://www.plantuml.com/plantuml/img/LL112i8m4Bpd5NjKf5-GGkjDBofuNf9j6upPacmG4VzkchQ8jvdTcPrXwoWO93sSKcB54JGEOwG8rOpWCX8PEFYEWwQW77K2mX1iFmWO6qYBPQ_qJxngtme0TWsd84VMM6JJnA1G0HgTJYwpOjjirMSvq-1YVh0XTtsDixvb3h4WJC8dlES-cLLdD9QpVTeyhJTniEJCpOuKbgaUqFVKhcrBr5zNgAhz5AjgyYP_umi0)
+
+
+* รูปที่ 5 Rent Book
+```
+@startuml
+
+title Classes - Rent Book
+'left to right direction
+class Book{
+   +id_book
+   +name
+   +Price
+   +author
+   +type_book
+   +get_borrow()
+   +get_return()
+   +get_xerox()
+}
+class Member{
+   -Id
+   -Name
+   -Surname
+   -Address
+   +get_apply for member()
+   +get_borrow()
+   +get_return()
+   +get_search()
+   +get_damages()
+   +get_report()
+}
+class Staff{
+   +Name
+   +Surname
+   +address
+   +get_add book()
+   +get_del book()
+   +get_borrow()
+   +get_retunr()
+   +get_edit()
+}
+class Manager{
+   -Name
+   -Surname
+   +get_reportmember()
+   +get_reportbook()
+}
+Book -- Member
+Book -- Staff
+Book -- Manager
+@enduml
+```
+[![IMAGE ALT TEXT](http://www.plantuml.com/plantuml/img/XLBBJiCm4BpxA_O6ACe_53XnA4Bq0z0stYGMVaJhZMY5-kyaZfkQKecJPyUxdl7OcoZ8CZghb1Yn1CyMOwG8DRoJ5tWAuLFTMMe5902RhXVGXgaH4xngvkRKywq0e3BwOpyFpDYZemJUs3GBmb7wm0dASQ1BRqSo5SpXw_vX9PXaP5yG1-9mcEfJrjsIsnCdvVf5f-KrYzQxQVIC7xLcYd4z1uV17g4D32wTK4ZyRo8ISjCNX4Q77SLVCqDWAOpk1DjsIUXii2eCLdXjK6kOiobLo5vJDxtwyZQaJMbZYtvocWExbLJX_ayo2vqjdDJyvb3N-GtMCjtqiha8gWrvFNsn7m00)
